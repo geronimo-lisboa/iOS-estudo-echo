@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //Minha label, onde vou por o resultado
+    @IBOutlet var resultadoLabel : UILabel!
+    //O campo de texto de onde vem o valor
+    @IBOutlet var inputTextField : UITextField!
+    
+    
+    @IBAction func changeVal()
+    {
+        resultadoLabel.text = "echo = "+inputTextField.text!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
